@@ -1,0 +1,36 @@
+:root {
+  --color-bg-primary: #000000;
+  --color-text-primary: #ffffff;
+  --color-accent-warm: #e0d0b0; /* Warm yellow/beige for Manifesto */
+  --color-accent-cold: #a0a0a0;
+  --color-border: #333333;
+  --font-primary: 'Inter', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+html, body {
+  margin: 0;
+  overflow: hidden;
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.scene {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
