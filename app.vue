@@ -11,20 +11,14 @@
         </ClientOnly>
         
         <div class="intro-text" :class="{ 'text-invert': isStormOrBlackout }">
-          <p>我們從數據的混亂中，<br/>洗練出秩序。</p>
+          <p>數據的虛空深處，<br/>尋找秩序的詩篇。</p>
         </div>
       </div>
     </Transition>
 
     <!-- Scene 01-05: The Horizon (Main Site) -->
     <div class="main-layer" v-show="isIntroComplete">
-      <TheHorizon>
-        <Scene01_Manifesto />
-        <Scene02_Tech />
-        <Scene03_Gallery />
-        <Scene04_Contrast />
-        <Scene05_Contact />
-      </TheHorizon>
+      <TheNovelWrapper />
     </div>
   </div>
 </template>
@@ -34,12 +28,7 @@ import { computed, onMounted } from 'vue'
 import { useMachine } from '@xstate/vue'
 import { introMachine } from '~/stores/machines/introMachine'
 import TheRain from '~/components/TheRain/index.vue'
-import TheHorizon from '~/components/TheHorizon/index.vue'
-import Scene01_Manifesto from '~/components/Scenes/Scene01_Manifesto.vue'
-import Scene02_Tech from '~/components/Scenes/Scene02_Tech.vue'
-import Scene03_Gallery from '~/components/Scenes/Scene03_Gallery.vue'
-import Scene04_Contrast from '~/components/Scenes/Scene04_Contrast.vue'
-import Scene05_Contact from '~/components/Scenes/Scene05_Contact.vue'
+import TheNovelWrapper from '~/components/TheNovelWrapper.vue'
 
 const { snapshot, send } = useMachine(introMachine)
 

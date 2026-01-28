@@ -10,18 +10,17 @@
   </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .scene {
-  width: 100vw;
-  height: 100vh;
-  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Left aligned for negative space */
-  padding-left: 15vw;
+  justify-content: center; /* Center for modal */
+  padding: 2rem;
   background-color: var(--color-accent-warm);
-  color: #1a1a1a; /* Dark text for contrast */
-  border-right: 1px solid rgba(0,0,0,0.1);
+  color: #1a1a1a;
+  box-sizing: border-box;
 }
 
 .content {

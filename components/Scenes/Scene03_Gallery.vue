@@ -61,16 +61,16 @@ const projects: Project[] = [
 ]
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .scene {
-  height: 100vh;
-  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   background-color: #000;
   color: #fff;
-  border-right: 1px solid #333;
-  padding-left: 5vw;
+  padding-left: 5%;
+  overflow-x: auto;
 }
 
 .gallery-intro {
@@ -149,7 +149,7 @@ const projects: Project[] = [
   width: 100vw;
   height: 100vh;
   background: rgba(0,0,0,0.9);
-  z-index: 1000;
+  z-index: 3000;
   display: flex;
   align-items: center;
   justify-content: center;

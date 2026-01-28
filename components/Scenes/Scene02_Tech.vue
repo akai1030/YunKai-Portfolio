@@ -50,18 +50,18 @@ import { ref } from 'vue'
 const isOpen = ref(false)
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .scene {
-  width: 100vw;
-  height: 100vh;
-  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #050505;
   color: #fff;
-  border-right: 1px solid #333;
   position: relative;
+  overflow: hidden;
 }
 
 .sql-bg {
